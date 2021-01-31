@@ -20,9 +20,9 @@ function compute()
     else
     {
         // the summary message to display once the computation is completed
-        var message = "If you deposit "+ principal +",<br>";
-        message += "at an interest rate of "+ rate + "%.";
-        message += "You will receive an amount of "+ interest +",<br>";
+        var message = "If you deposit <span class='yellow'>"+ principal +"</span>,<br />";
+        message += "at an interest rate of <span class='yellow'>"+ rate + "%.</span> <br />";
+        message += "You will receive an amount of <span class='yellow'>"+ interest +",<br />";
         message += "in the year "+future_date.getFullYear();
         document.getElementById("result").innerHTML = message;
     }
